@@ -32,7 +32,13 @@ function ShowCurrentTime() {
   let month = months[now.getMonth()];
   let date = now.getDate();
   let hours = now.getHours();
+  if(hours < 10) {
+    hours = `0${current.Hour}`;
+  }
   let minutes = now.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${currentMinute}`;
+  }
 
   let today = `${day} ${month} ${date} ${year} ${hours}:${minutes}`;
   return today;
