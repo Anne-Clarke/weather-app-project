@@ -57,11 +57,7 @@ input {
   border-color: rgb(52, 49, 49);
 }
 
-.temperatureDescription,
-.currentWind,
-.currentHumidity,
-.wind,
-.humidity,
+.weatherDescription,
 .todaysDate,
 .gmt {
   text-align: center;
