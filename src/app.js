@@ -33,11 +33,11 @@ function ShowCurrentTime() {
   let date = now.getDate();
   let hours = now.getHours();
   if(hours < 10) {
-    hours = `0${current.Hour}`;
+    hours = `0${hours}`;
   }
   let minutes = now.getMinutes();
   if (minutes < 10) {
-    minutes = `0${currentMinute}`;
+    minutes = `0${minutes}`;
   }
 
   let today = `${day} ${month} ${date} ${year} ${hours}:${minutes}`;
@@ -52,19 +52,23 @@ function getForecast(response) {
   let temperature = Math.round(response.data.main.temp);
   let city = response.data.name;
   let weatherDescription = response.data.weather[0].description;
+  let wind = response.data.wind.speed;
+  let humidity = response.data.main.humidity;
 
   let temperatureElement = document.querySelector("#current-temperature");
   let currentCity = document.querySelector("#city");
   let currentDescription = document.querySelector(".temperatureDescription");
   let iconElement = document.querySelector("#weather-icon");
+  let windElement = document.querySelector(".currentWind");
+  let humidityElement = document.querySelector(".currentHumidity");
 
-  
-
-  celsiusTemperature = temperature;
+    celsiusTemperature = temperature;
 
   currentCity.innerHTML = city;
   temperatureElement.innerHTML = temperature;
   currentDescription.innerHTML = weatherDescription;
+  windElement.innerHTML = wind;
+  humidityElement.innerHTML = humidity;
 
   iconElement.setAttribute(
     "src",
