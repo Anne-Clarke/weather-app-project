@@ -58,6 +58,8 @@ function getForecast(response) {
   let currentDescription = document.querySelector(".temperatureDescription");
   let iconElement = document.querySelector("#weather-icon");
 
+  
+
   celsiusTemperature = temperature;
 
   currentCity.innerHTML = city;
