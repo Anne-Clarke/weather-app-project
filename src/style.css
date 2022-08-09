@@ -21,13 +21,6 @@
   border-radius: 10px;
 }
 
-h1 {
-  color: rgb(61, 84, 92);
-  padding: 10px 0px;
-  text-align: center;
-  font-family: "Cerebri-Sans,Helvetica,Arial,sans-serif";
-}
-
 input {
   padding: 7px 12px;
   color: rgb(61, 84, 92);
