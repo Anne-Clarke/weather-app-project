@@ -51,10 +51,13 @@ input {
 
 .weatherDescription,
 .todaysDate,
-.gmt {
+.gmt,
+.wind,
+.humidity {
   text-align: center;
   font-weight: 00;
   padding: 1px;
+  text-transform: capitalize;
   font-size: 20px;
   color: rgb(220, 240, 247);
   font-family: "Cerebri-Sans,Helvetica,Arial,sans-serif";

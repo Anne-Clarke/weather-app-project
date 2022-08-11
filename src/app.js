@@ -32,7 +32,7 @@ function ShowCurrentTime() {
   let month = months[now.getMonth()];
   let date = now.getDate();
   let hours = now.getHours();
-  if(hours < 10) {
+  if (hours < 10) {
     hours = `0${hours}`;
   }
   let minutes = now.getMinutes();
@@ -62,7 +62,7 @@ function getForecast(response) {
   let windElement = document.querySelector(".currentWind");
   let humidityElement = document.querySelector(".currentHumidity");
 
-    celsiusTemperature = temperature;
+  celsiusTemperature = temperature;
 
   currentCity.innerHTML = city;
   temperatureElement.innerHTML = temperature;
@@ -86,6 +86,9 @@ function showCity(event) {
 
   axios.get(apiUrl).then(getForecast);
 }
+
+console.log("getForecast")
+
 let formInput = document.querySelector("#search-city");
 formInput.addEventListener("submit", showCity);
 
@@ -96,12 +99,6 @@ function cityCoordinates(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?&lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(getForecast);
-}
-
-function searchCity(event) {
-  event.preventDefault;
-  let currentCity = document.querySelector("#city").value;
-  search = currentCity.value;
 }
 
 //Current Location Co-ordinates
@@ -148,4 +145,3 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-temperature");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search = "Dubai";
