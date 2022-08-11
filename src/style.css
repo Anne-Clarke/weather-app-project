@@ -63,6 +63,10 @@ input {
   font-family: "Cerebri-Sans,Helvetica,Arial,sans-serif";
 }
 
+.unitKph{
+  text-transform: lowercase;
+}
+
 #current-temperature {
   text-align: center;
   font-size: 35px;
