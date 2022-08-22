@@ -76,6 +76,40 @@ function getForecast(response) {
   );
 }
 
+//Display 7 day forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+
+  let forecastHTML = `<div class = "row">`;
+
+  days.forEach(function(day) {
+    forecastHTML = forecastHTML +
+
+    `
+       <div class="col-2">
+       <div class="weather-forecast-date"> ${day} </div>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt=""
+              width="40"
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature-max"> 24° </span>
+              <span class="weather-forecast-temperature-min"> 18° </span>
+            </div>
+          </div>
+      </div>
+`;
+  });
+
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML=forecastHTML;
+
+}
+
 function showCity(event) {
 event.preventDefault();
   let input = document.querySelector("#city-input");
@@ -147,6 +181,7 @@ function displayCelsiusTemperature(event) {
 }
 
 search("London");
+displayForecast();
 
 let celsiusTemperature = null;
 

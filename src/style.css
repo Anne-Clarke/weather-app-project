@@ -102,17 +102,9 @@ input {
   font-size: 50px;
 }
 
-img {
-  color: rgb(61, 84, 92);
-  width: 55px;
-  display: block;
-  margin: 0 auto;
-  font-size: 10px;
-  font-weight: bold;
-}
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   color: #000;
 }
@@ -123,7 +115,7 @@ img {
 }
 
 weather-forecast-temperatures {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .weather-forecast-temperature-min {
@@ -135,11 +127,6 @@ weather-forecast-temperatures {
   text-align: left;
 }
 
-.row {
-  width: 70px;
-  display: block;
-  margin: 0 auto;
-}
 
 #fahrenheit-temperature,
 #celsius-temperature,
