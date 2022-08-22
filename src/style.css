@@ -102,21 +102,32 @@ input {
   font-size: 50px;
 }
 
-.container {
-  display: inline-flex;
-  justify-content: center;
-  margin: 10px;
-}
-
-img,
-.days,
-.temp {
+img {
   color: rgb(61, 84, 92);
   width: 55px;
   display: block;
   margin: 0 auto;
   font-size: 10px;
   font-weight: bold;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+weather-forecast-temperatures {
+  font-size: 16px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
 
 .foot {

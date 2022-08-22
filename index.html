@@ -16,22 +16,24 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <script src="https://kit.fontawesome.com/a7924f373f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a7924f373f.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Weather App</title>
   </head>
 
   <body>
-  
     <div class="weather-app">
-     
       <form id="search-city" class="search-bar">
         <input
           type="search"
           id="city-input"
           placeholder="Enter City"
           autocomplete="off"
-          autofocus="on";
+          autofocus="on"
+          ;
         />
 
         <button type="submit" id="button-submit" class="btn btn-light">
@@ -48,22 +50,23 @@
         <div class="todaysDate">Thursday, 30 June 2022 16.30</div>
 
         <div class="icon">
-          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
             id="weather-icon"
           />
         </div>
 
         <div class="weatherDescription">
-          <i class ="temperatureDescription"> Clear Sky</i>
-        <div>
-          <i class ="wind"> Wind: </i>
-            <span class="currentWind"> 3.6 </span> <span class="unitKph"> kph </span>
+          <i class="temperatureDescription"> Clear Sky</i>
+          <div>
+            <i class="wind"> Wind: </i>
+            <span class="currentWind"> 3.6 </span>
+            <span class="unitKph"> kph </span>
 
-            <br/>
+            <br />
 
-          <i class ="humidity"> Humidity:</i>
+            <i class="humidity"> Humidity:</i>
             <span class="currentHumidity"> 40 </span> <span> % </span>
-
           </div>
         </div>
 
@@ -73,95 +76,26 @@
           <span id="current-temperature"> 29 </span>
           <span class="celsiusFahrenheit">
             <a href="#" id="celsius-temperature" class="active">°C </a>
-           |  
-          <a href="#" id="fahrenheit-temperature">°F </a>
+            |
+            <a href="#" id="fahrenheit-temperature">°F </a>
           </span>
         </div>
       </div>
       <br />
       <br />
 
-      <div class="container">
-        <div class="col">
+      <div class="weather-forecast">
+        <div class="col-2">
           <div class="row">
-            <div class="card">
-              <div class="days">Today</div>
-              <img src="images/partly-cloudy-day.png" />
-              <div class="card-body">
-                <div class="temp">24°C</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="row">
-            <div class="card">
-              <div class="days">Sunday</div>
-              <img src="images/partly-cloudy-rain--v2.gif" />
-              <div class="card-body">
-                <div class="temp">20°C</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="row">
-            <div class="card">
-              <div class="days">Monday</div>
-              <img src="images/sun.png" />
-              <div class="card-body">
-                <div class="temp">23°C</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="row">
-            <div class="card">
-              <div class="days">Tuesday</div>
-              <img src="images/partly-cloudy-rain--v2.gif" />
-              <div class="card-body">
-                <div class="temp">23°C</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="row">
-            <div class="card">
-              <div class="days">Wednesday</div>
-              <img src="images/partly-cloudy-day.png" />
-              <div class="card-body">
-                <div class="temp">25°C</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="row">
-            <div class="card">
-              <div class="days">Thursday</div>
-              <img src="images/partly-cloudy-day.png" />
-              <div class="card-body">
-                <div class="temp">27°C</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="row">
-            <div class="card">
-              <div class="days">Friday</div>
-              <img src="images/partly-cloudy-day.png" />
-              <div class="card-body">
-                <div class="temp">25°C</div>
-              </div>
+            <div class="weather-forecast-date">Monday</div>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt=""
+              width="40"
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature-max"> 24° </span>
+              <span class="weather-forecast-temperature-min"> 18° </span>
             </div>
           </div>
         </div>
