@@ -89,18 +89,18 @@ function displayForecast() {
     forecastHTML = forecastHTML +
 
     `
-       <div class="col-2">
+       <div class="col">
        <div class="weather-forecast-date"> ${day} </div>
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               alt=""
               width="40"
             />
-            <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperatures">
               <span class="weather-forecast-temperature-max"> 24° </span>
               <span class="weather-forecast-temperature-min"> 18° </span>
-            </div>
-          </div>
+            </span>
+          </span>
       </div>
 `;
   });

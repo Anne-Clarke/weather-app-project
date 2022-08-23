@@ -1,7 +1,7 @@
 .weather-app{
   background: linear-gradient(
     rgb(244, 246, 248) -3.5%,
-    rgb(225, 230, 241) 53.8%,
+    rgb(218, 226, 244) 53.8%,
     rgb(201, 212, 250) 100.4%
   );
   max-width: 600px;
@@ -16,7 +16,7 @@
   color: rgb(220, 240, 247);
   max-width: 500px;
   margin: 30px auto;
-  padding: 15px 5px;
+  padding: 20px 5px;
   border: 3px solid #dadde1;
   border-radius: 10px;
 }
@@ -34,14 +34,14 @@ input {
   box-sizing: border-box;
   padding: 40px 10px;
   text-align: center;
-  font-weight: 400px;
+  font-weight: 500px;
   color: rgb(52, 49, 49);
   font-family: "Cerebri-Sans,Helvetica,Arial,sans-serif";
 }
 
 .btn {
   font-size: large;
-  font-weight: bold;
+  font-weight:400px;
   background-color: rgb(238, 244, 247);
   border-radius: 10px;
   color: rgb(52, 49, 49);
@@ -56,7 +56,7 @@ input {
 .humidity {
   text-align: center;
   font-weight: 00;
-  padding: 1px;
+  padding: 5px;
   text-transform: capitalize;
   font-size: 20px;
   color: rgb(220, 240, 247);
@@ -104,7 +104,6 @@ input {
 
 
 .weather-forecast {
-  margin-top: 10px;
   text-align: center;
   color: #000;
 }
@@ -112,7 +111,7 @@ input {
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.8;
-}
+  }
 
 weather-forecast-temperatures {
   font-size: 13px;
