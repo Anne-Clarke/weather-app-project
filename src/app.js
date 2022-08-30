@@ -46,6 +46,15 @@ function ShowCurrentTime() {
 let currentTime = document.querySelector(".todaysDate");
 currentTime.innerHTML = ShowCurrentTime();
 
+function formatDay(timestamp){
+  let date = new Date(timestamp*1000);
+  let day = date.getDay();
+  let days =  ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+
+  return days[day];
+} 
+
 //Search City
 
 function search(city) {
@@ -146,15 +155,15 @@ function displayForecast(response) {
       forecastHTML +
       `
        <div class="col">
-       <div class="weather-forecast-date"> ${forecastDay.dt} </div>
+       <div class="weather-forecast-date"> ${formatDay(forecastDay.dt)} </div>
             <img
               src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
               alt=""
               width="40"
             />
             <span class="weather-forecast-temperatures">
-              <span class="weather-forecast-temperature-max"> ${forecastDay.temp.max}° </span>
-              <span class="weather-forecast-temperature-min"> ${forecastDay.temp.min}° </span>
+              <span class="weather-forecast-temperature-max"> ${Math.round(forecastDay.temp.max)}° </span>
+              <span class="weather-forecast-temperature-min"> ${Math.round(forecastDay.temp.min)}° </span>
             </span>
           </span>
       </div>
