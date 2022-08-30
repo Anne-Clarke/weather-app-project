@@ -160,7 +160,7 @@ function displayForecast(response) {
                 forecastDay.weather[0].icon
               }@2x.png"
               alt=""
-              width="40"
+              width="50"
             />
             <span class="weather-forecast-temperatures">
               <span class="weather-forecast-temperature-max"> ${Math.round(
@@ -180,38 +180,5 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-//Change Temperature - Celsius/Fahrenheit
-
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-
-  let currentTemperatureElement = document.querySelector(
-    "#current-temperature"
-  );
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  currentTemperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-
-  let currentTemperatureElement = document.querySelector(
-    "#current-temperature"
-  );
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-
-  currentTemperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
 
 search("London");
-
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit-temperature");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-temperature");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
