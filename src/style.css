@@ -1,8 +1,8 @@
 .weather-app{
   background: linear-gradient(
-    rgb(244, 246, 248) -3.5%,
-    rgb(218, 226, 244) 53.8%,
-    rgb(201, 212, 250) 100.4%
+    rgb(221, 231, 242) -3.5%,
+    rgb(216, 225, 245) 53.8%,
+    rgb(201, 211, 248) 100.4%
   );
   max-width: 600px;
   margin: 30px auto;
@@ -82,16 +82,6 @@ input {
   font-family: "Cerebri-Sans,Helvetica,Arial,sans-serif";
 }
 
-#celsiusFahrenheit,
-.divide {
-  text-align: center;
-  font-weight: 00;
-  padding: 10px;
-  font-size: 25px;
-  color: rgb(220, 240, 247);
-  font-family: "Cerebri-Sans,Helvetica,Arial,sans-serif";
-}
-
 #temperatures,
 #weather-icon,
 .icon {
@@ -126,16 +116,11 @@ weather-forecast-temperatures {
   text-align: left;
 }
 
-
-#fahrenheit-temperature,
 #celsius-temperature,
 .active {
   color: rgb(220, 240, 247);
   cursor: default;
-}
-
-#fahrenheit-temperature,
-#celsius-temperature,
-.active:hover {
   text-decoration: none;
+  flex: 0 0 auto;
+  
 }
