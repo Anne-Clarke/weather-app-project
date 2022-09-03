@@ -1,8 +1,8 @@
 .weather-app{
   background: linear-gradient(
-    rgb(221, 231, 242) -3.5%,
-    rgb(216, 225, 245) 53.8%,
-    rgb(201, 211, 248) 100.4%
+    rgb(232, 235, 244) -3.5%,
+    rgb(175, 209, 239) 53.8%,
+    rgb(119, 157, 226) 100.4%
   );
   max-width: 600px;
   margin: 30px auto;
@@ -12,7 +12,11 @@
 }
 
 .city-box {
-  background-color: rgb(11, 51, 71);
+  background: linear-gradient(
+    rgb(134, 138, 151) -3.5%,
+    rgb(74, 125, 170) 53.8%,
+    rgb(51, 83, 142) 100.4%
+  );
   color: rgb(220, 240, 247);
   max-width: 500px;
   margin: 30px auto;
@@ -111,10 +115,15 @@ weather-forecast-temperatures {
   opacity: 0.5;
 }
 
-.foot {
+a:link,
+.foot,
+ .netlify,
+  .openSource  {
   color: rgb(61, 84, 92);
   text-align: left;
-}
+  text-decoration: none;
+  
+} 
 
 #celsius-temperature,
 .active {
@@ -122,5 +131,4 @@ weather-forecast-temperatures {
   cursor: default;
   text-decoration: none;
   flex: 0 0 auto;
-  
-}
+  }
